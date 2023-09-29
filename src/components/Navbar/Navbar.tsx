@@ -1,10 +1,10 @@
 const Navbar = () => {
   return (
     <>
-      <nav className="bg-white">
-        <div className="container mx-auto justify-between flex items-center px-10">
+      <nav className="">
+        <div className="container bg-white mx-auto justify-between flex items-center px-10">
           <div className="">
-            <img className="h-12" src="images/panda_logo_png.png" />
+            <img className="h-14" src="images/panda_logo_png.png" />
           </div>
           <ul className="flex space-x-10 py-6 font-medium">
             <li>
