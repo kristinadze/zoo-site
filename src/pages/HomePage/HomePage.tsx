@@ -7,8 +7,10 @@ import ContactUs from "../../components/ContactUs/ContactUs";
 const HomePage = () => {
   return (
     <>
-      <Navbar />
       <Hero />
+      <div className="">
+        <Navbar />
+      </div>
       <div className="container mx-auto my-12">
         <AboutUs
           title1="LOREM"
@@ -25,7 +27,6 @@ const HomePage = () => {
           blandit nisl at laoreet elementum."
         />
       </div>
-
       <div className="container flex space-x-10 mx-auto pb-10 justify-center">
         <Card
           imageUrl="images/animals_banner.png"
@@ -43,12 +44,11 @@ const HomePage = () => {
           description="for families & couples"
         ></Card>
       </div>
-
-      <div className="mx-auto bg-gray-800">
+      <div className="bg-gray-800">
         <ContactUs
           titleLine1="CONTACT"
           titleLine2="US"
-          location="av.Slice Line, NYC CA"
+          location="av. Slice Line, NYC CA"
           phone="+11 111  111"
         />
       </div>

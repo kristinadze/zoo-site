@@ -19,7 +19,7 @@ const ContactUs = (props: ContactUsProps) => {
           </h1>
         </div>
 
-        <div className="w-2/3 text-center">
+        <div className="w-1/2 text-center">
           <p className="pb-4">Location: {props.location}</p>
           <p className="">Phone: {props.phone}</p>
         </div>
