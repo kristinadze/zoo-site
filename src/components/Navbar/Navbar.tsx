@@ -1,3 +1,5 @@
+import { Outlet, NavLink } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <>
@@ -8,15 +10,15 @@ const Navbar = () => {
           </div>
           <ul className="flex space-x-10 py-6 font-medium">
             <li>
-              <a href="#" className="border-b-4 border-teal-300 pb-3">
+              <NavLink to="/" className="border-b-4 border-teal-300 pb-3">
                 HOME
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#">PACKAGES</a>
+              <NavLink to="packs">PACKAGES</NavLink>
             </li>
             <li>
-              <a href="#">REQUESTS</a>
+              <NavLink to="requests">REQUESTS</NavLink>
             </li>
           </ul>
         </div>
