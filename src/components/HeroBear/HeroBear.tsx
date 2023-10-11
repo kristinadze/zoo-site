@@ -1,4 +1,5 @@
 import Card from "../Card/Card";
+import ContactUs from "../ContactUs/ContactUs";
 
 export const HeroBear = () => {
   const bearImage = {
@@ -26,6 +27,15 @@ export const HeroBear = () => {
           imageUrl="images/parrot.png"
           title="Couple pack"
           description="a romantic sightseeing"
+        />
+      </div>
+
+      <div className="bg-gray-800">
+        <ContactUs
+          titleLine1="CONTACT"
+          titleLine2="US"
+          location="av. Slice Line, NYC CA"
+          phone="+11 111  111"
         />
       </div>
     </>
