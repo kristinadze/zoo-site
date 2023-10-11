@@ -1,4 +1,4 @@
-import { Outlet, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -10,9 +10,7 @@ const Navbar = () => {
           </div>
           <ul className="flex space-x-10 py-6 font-medium">
             <li>
-              <NavLink to="/" className="border-b-4 border-teal-300 pb-3">
-                HOME
-              </NavLink>
+              <NavLink to="/">HOME</NavLink>
             </li>
             <li>
               <NavLink to="packs">PACKAGES</NavLink>
@@ -28,3 +26,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// className="border-b-4 border-teal-300 pb-3"
