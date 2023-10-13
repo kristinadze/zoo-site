@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className="container absolute top-0 bg-white justify-between flex items-center px-10">
+        <div className="container absolute left-16 top-0 bg-white justify-between flex items-center px-10">
           <div>
             <img className="h-20" src="images/panda_logo_png.png" />
           </div>
