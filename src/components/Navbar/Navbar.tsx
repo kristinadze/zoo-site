@@ -10,13 +10,41 @@ const Navbar = () => {
           </div>
           <ul className="flex space-x-10 py-6 font-medium">
             <li>
-              <NavLink to="/">HOME</NavLink>
+              <NavLink
+                to="/"
+                style={({ isActive }) => {
+                  return {
+                    borderBottom: isActive ? "4px solid teal" : "",
+                    // border-b-4 border-teal-300 pb-3
+                  };
+                }}
+              >
+                HOME
+              </NavLink>
             </li>
             <li>
-              <NavLink to="packs">PACKAGES</NavLink>
+              <NavLink
+                to="packs"
+                style={({ isActive }) => {
+                  return {
+                    borderBottom: isActive ? "4px solid teal" : "",
+                  };
+                }}
+              >
+                PACKAGES
+              </NavLink>
             </li>
             <li>
-              <NavLink to="requests">REQUESTS</NavLink>
+              <NavLink
+                to="requests"
+                style={({ isActive }) => {
+                  return {
+                    borderBottom: isActive ? "4px solid teal" : "",
+                  };
+                }}
+              >
+                REQUESTS
+              </NavLink>
             </li>
           </ul>
         </div>
