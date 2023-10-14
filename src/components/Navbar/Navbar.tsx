@@ -24,7 +24,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to="packs"
+                to="/packs"
                 style={({ isActive }) => {
                   return {
                     borderBottom: isActive ? "4px solid teal" : "",
@@ -36,7 +36,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to="requests"
+                to="/requests"
                 style={({ isActive }) => {
                   return {
                     borderBottom: isActive ? "4px solid teal" : "",
