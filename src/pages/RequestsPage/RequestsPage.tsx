@@ -1,6 +1,10 @@
 import Navbar from "../../components/Navbar/Navbar";
 
 export const RequestsPage = () => {
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+  };
+
   return (
     <>
       <div>
@@ -9,8 +13,7 @@ export const RequestsPage = () => {
 
       <div className="bg-gray-100 min-h-screen flex items-center justify-center">
         <div className="bg-white p-8 rounded shadow-md">
-          {/* <form onSubmit={(e) => handleSubmit(e)}> */}
-          <form>
+          <form onSubmit={(e) => handleSubmit(e)}>
             <div className="mb-4">
               <label className="block text-sm font-medium text-gray-600">
                 Name:
