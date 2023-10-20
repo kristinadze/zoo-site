@@ -57,36 +57,6 @@ export const RequestsPage = () => {
 
             <div className="mb-4">
               <label className="block text-sm font-medium text-gray-600">
-                Date From:
-              </label>
-              <input
-                type="text"
-                id="date_from"
-                name="date_from"
-                // value={formData.date_from}
-                // onChange={(e) => handleFieldChange(e)}
-                className="mt-1 p-2 border border-gray-300 w-full"
-                required
-              />
-            </div>
-
-            <div className="mb-4">
-              <label className="block text-sm font-medium text-gray-600">
-                Date To:
-              </label>
-              <input
-                type="text"
-                id="date_to"
-                name="date_to"
-                // value={formData.date_to}
-                // onChange={(e) => handleFieldChange(e)}
-                className="mt-1 p-2 border border-gray-300 w-full"
-                required
-              />
-            </div>
-
-            <div className="mb-4">
-              <label className="block text-sm font-medium text-gray-600">
                 Status:
               </label>
               <input
