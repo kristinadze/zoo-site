@@ -1,4 +1,4 @@
-import Card from "../Card/Card";
+import { CardForBooking } from "../CardForBooking/CardForBooking";
 import ContactUs from "../ContactUs/ContactUs";
 
 export const HeroBear = () => {
@@ -13,17 +13,17 @@ export const HeroBear = () => {
       ></header>
 
       <div className="container flex space-x-10 mx-auto pb-10 justify-center">
-        <Card
+        <CardForBooking
           imageUrl="images/giraffe.png"
           title="Family pack"
           description="perfect for families with small children"
         />
-        <Card
+        <CardForBooking
           imageUrl="images/leo.png"
           title="Corporate pack"
           description="a quick getaway for your employees"
         />
-        <Card
+        <CardForBooking
           imageUrl="images/parrot.png"
           title="Couple pack"
           description="a romantic sightseeing"
