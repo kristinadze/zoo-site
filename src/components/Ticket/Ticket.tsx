@@ -12,7 +12,7 @@ export const Ticket = (props) => {
 
   return (
     <div className="popup fixed z-1 left-0 top-0 w-full h-full flex justify-center">
-      <div className="popup-inner bg-white absolute mx-0 top-52 p-20 max-w-full rounded-sm shadow-lg">
+      <div className="popup-inner absolute bg-white mx-0 top-52 p-20 max-w-full rounded-sm shadow-lg">
         <button className="float-right" onClick={props.toggle}>
           X
         </button>

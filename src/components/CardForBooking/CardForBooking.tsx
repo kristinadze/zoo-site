@@ -20,7 +20,7 @@ export const CardForBooking = (props: CardForBookingProps) => {
         <img className="" src={props.imageUrl} />
         <div>
           <button
-            className="bg-yellow-500 absolute right-2 top-2 p-3 rounded-md font-light"
+            className="bg-yellow-500 absolute right-2 top-2 p-3 rounded-md font-light "
             onClick={togglePop}
           >
             Book now!
