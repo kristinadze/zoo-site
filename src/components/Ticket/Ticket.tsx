@@ -10,6 +10,21 @@ export const Ticket = (props) => {
     props.toggle();
   }
 
+  // const adult_tix_quantity = document.querySelectorAll(
+  //   ".adult_quantity_tickets"
+  // );
+
+  // for (let i = 1; i <= adult_tix_quantity.length; i++) {
+  //   let ele = parseInt(adult_tix_quantity[i]);
+  //   let ticket_price = 20;
+  //   let total_price = 0;
+
+  //   if (ele === i) {
+  //     total_price = i * ticket_price;
+  //     return total_price;
+  //   }
+  // }
+
   return (
     <div className="popup fixed z-1 left-0 top-0 w-full h-full flex justify-center">
       <div className="popup-inner absolute bg-white mx-0 top-52 p-20 max-w-full rounded-sm shadow-lg">
@@ -38,12 +53,24 @@ export const Ticket = (props) => {
               value={adults}
               onChange={(e) => setAdults(e.target.value)}
             >
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
+              <option className="adult_quantity_tickets" value="1">
+                1
+              </option>
+              <option className="adult_quantity_tickets" value="2">
+                2
+              </option>
+              <option className="adult_quantity_tickets" value="3">
+                3
+              </option>
+              <option className="adult_quantity_tickets" value="4">
+                4
+              </option>
+              <option className="adult_quantity_tickets" value="5">
+                5
+              </option>
+              <option className="adult_quantity_tickets" value="6">
+                6
+              </option>
             </select>
           </label>
           <label className="block mb-3">
@@ -54,12 +81,24 @@ export const Ticket = (props) => {
               value={children}
               onChange={(e) => setChildren(e.target.value)}
             >
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
+              <option className="child_quantity_tickets" value="1">
+                1
+              </option>
+              <option className="child_quantity_tickets" value="2">
+                2
+              </option>
+              <option className="child_quantity_tickets" value="3">
+                3
+              </option>
+              <option className="child_quantity_tickets" value="4">
+                4
+              </option>
+              <option className="child_quantity_tickets" value="5">
+                5
+              </option>
+              <option className="child_quantity_tickets" value="6">
+                6
+              </option>
             </select>
           </label>
           <h2>Have a promo code? Enter down below!</h2>
@@ -72,9 +111,12 @@ export const Ticket = (props) => {
             Apply Code
           </button>
           <br />
+
+          <h3> Total: $ </h3>
+          <p id="totalPrice"></p>
           <button
             type="submit"
-            className="bg-yellow-500 p-3 rounded-md font-light mt-3"
+            className="bg-yellow-500 p-3 rounded-md font-light mt-3 btn1"
           >
             Submit Request
           </button>
