@@ -10,7 +10,7 @@ interface CardForBookingProps {
 export const CardForBooking = (props: CardForBookingProps) => {
   const [seen, setSeen] = useState(false);
 
-  function togglePop() {
+  function togglePop(): void {
     setSeen(!seen);
   }
 
